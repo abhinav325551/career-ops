@@ -17,10 +17,10 @@ jds/*
 
 # User config and customization (never auto-updated)
 config/profile.yml
-portals.yml
-modes/_profile.md
 .update-dismissed
 .update-lock
+# portals.yml and modes/_profile.md are tracked in this fork (PMM customization)
+# config/profile.yml remains gitignored (contains personal data: email, phone, salary)
 
 # Generated
 .resolved-prompt-*

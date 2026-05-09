@@ -83,6 +83,9 @@ Classify every offer into one of these types (or hybrid of 2):
 | AI Solutions Architect | "architecture", "enterprise", "integration", "design", "systems" |
 | AI Forward Deployed | "client-facing", "deploy", "prototype", "fast delivery", "field" |
 | AI Transformation | "change management", "adoption", "enablement", "transformation" |
+| Product Marketing Manager (PMM) | "product marketing", "PMM", "go-to-market", "GTM", "positioning", "messaging", "launch", "sales enablement", "competitive intel", "analyst relations" |
+| Growth / Demand Generation | "demand generation", "growth marketing", "PLG", "MQL", "pipeline marketing", "funnel", "acquisition", "activation" |
+| Developer Marketing | "developer marketing", "developer advocacy", "DevRel", "technical marketing", "developer community", "developer experience marketing" |
 
 After detecting archetype, read `modes/_profile.md` for the user's specific framing and proof points for that archetype.
 
