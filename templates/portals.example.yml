@@ -187,6 +187,32 @@ search_queries:
     query: 'site:jobs.lever.co "Product Marketing" OR "PMM" developer OR platform OR SaaS remote OR India OR Singapore'
     enabled: true
 
+  # -- Tier 8 global companies: remote or visa relocation only --
+
+  - name: Greenhouse — AI Labs PMM Remote/Relocation
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Product Marketing" AI OR "developer marketing" remote OR "visa sponsorship" OR "relocation"'
+    enabled: true
+
+  - name: Ashby — AI/DevTool PMM Remote/Relocation
+    query: 'site:jobs.ashbyhq.com "Product Marketing" OR "PMM" OR "developer marketing" remote OR "visa sponsorship" OR "work anywhere"'
+    enabled: true
+
+  - name: Voice AI Companies — PMM Remote
+    query: '"ElevenLabs" OR "PolyAI" OR "Hume AI" OR "Deepgram" OR "Vapi" "Product Marketing" OR "PMM" remote'
+    enabled: true
+
+  - name: Contact Center AI — PMM Remote
+    query: '"Ada" OR "LivePerson" OR "Sierra AI" OR "Talkdesk" OR "Genesys" "Product Marketing" OR "PMM" remote'
+    enabled: true
+
+  - name: LLMOps/Automation — PMM Remote
+    query: '"Weights Biases" OR "Langfuse" OR "Cognigy" OR "n8n" OR "Zapier" OR "Make.com" "Product Marketing" OR "PMM" remote'
+    enabled: true
+
+  - name: European Tech — PMM Remote
+    query: '"Factorial" OR "Attio" OR "Tinybird" OR "Clarity AI" OR "TravelPerk" "Product Marketing" OR "PMM" remote OR "visa sponsorship"'
+    enabled: true
+
 # -- Tracked companies --
 # Companies whose career pages are checked directly.
 
@@ -551,4 +577,275 @@ tracked_companies:
     scan_method: websearch
     scan_query: 'site:salla.com/careers "Product Marketing" OR "PMM" OR "Marketing"'
     notes: "Jeddah. Saudi e-commerce SaaS platform for merchants. B2B SaaS, fast-growing, ME-native."
+    enabled: true
+
+  # ============================================================
+  # TIER 8 — GLOBAL US/EMEA COMPANIES
+  # Condition: ONLY pursue if role is fully remote OR company
+  # explicitly offers visa sponsorship / relocation package.
+  # Score location as 4.0 max unless remote confirmed.
+  # Glean, Salesforce, Gong, Anthropic already tracked in T1–T5.
+  # ============================================================
+
+  # -- AI Labs --
+
+  - name: OpenAI
+    careers_url: https://openai.com/careers
+    scan_method: websearch
+    scan_query: 'site:openai.com/careers "Product Marketing" OR "PMM" OR "developer marketing" remote OR "relocation"'
+    notes: "San Francisco. ChatGPT/GPT-4/enterprise API. PMM team for B2B + developer products. Remote roles exist. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Mistral AI
+    careers_url: https://jobs.lever.co/mistral
+    notes: "Paris. European frontier AI lab. PMM for enterprise/API products. EU relocation possible. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Cohere
+    careers_url: https://jobs.ashbyhq.com/cohere
+    notes: "Toronto / remote. Enterprise LLM provider. PMM for B2B API and enterprise. Remote-friendly. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: LangChain
+    careers_url: https://jobs.ashbyhq.com/langchain
+    notes: "Remote. Developer framework + LangSmith platform. Developer marketing + PMM roles. Fully remote. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Pinecone
+    careers_url: https://jobs.ashbyhq.com/pinecone
+    notes: "NYC / remote. Vector database leader. PMM for developer + enterprise segments. Remote roles. [T8: remote or relocation only]"
+    enabled: true
+
+  # -- Voice AI --
+
+  - name: ElevenLabs
+    careers_url: https://jobs.ashbyhq.com/elevenlabs
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/elevenlabs "Marketing" OR "PMM"'
+    notes: "Remote-first. Voice AI TTS leader. PMM for enterprise + developer segments. Fast-growing. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: PolyAI
+    careers_url: https://job-boards.eu.greenhouse.io/polyai
+    api: https://boards-api.greenhouse.io/v1/boards/polyai/jobs
+    notes: "London UK. Voice AI for enterprise contact centers. PMM for enterprise GTM. UK relocation possible. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Parloa
+    careers_url: https://job-boards.eu.greenhouse.io/parloa
+    api: https://boards-api.greenhouse.io/v1/boards/parloa/jobs
+    notes: "Berlin. Voice AI for enterprise. PMM roles. EU relocation / visa route possible. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Hume AI
+    careers_url: https://job-boards.greenhouse.io/humeai
+    api: https://boards-api.greenhouse.io/v1/boards/humeai/jobs
+    notes: "NYC. Empathic voice AI. PMM for developer + enterprise. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Deepgram
+    careers_url: https://jobs.ashbyhq.com/deepgram
+    scan_method: websearch
+    scan_query: 'site:deepgram.com/careers OR site:jobs.ashbyhq.com/deepgram "Marketing" OR "PMM"'
+    notes: "STT/TTS API platform. Developer marketing + PMM. Remote-friendly. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Vapi
+    careers_url: https://jobs.ashbyhq.com/vapi
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/vapi "Marketing" OR "PMM"'
+    notes: "Voice AI infrastructure for developers. Developer marketing + GTM. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Bland AI
+    careers_url: https://jobs.ashbyhq.com/bland
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/bland "Marketing" OR "PMM"'
+    notes: "Voice phone agents. $65M Series B. Growing GTM team. [T8: remote or relocation only]"
+    enabled: true
+
+  # -- AI Platforms --
+
+  - name: Retool
+    careers_url: https://retool.com/careers
+    scan_method: websearch
+    scan_query: 'site:retool.com/careers "Product Marketing" OR "PMM" OR "developer marketing" remote OR "relocation"'
+    notes: "London / SF. Internal tools + AI platform. Strong PMM culture. Abhinav's enterprise GTM + developer audience experience fits well. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Airtable
+    careers_url: https://job-boards.greenhouse.io/airtable
+    api: https://boards-api.greenhouse.io/v1/boards/airtable/jobs
+    notes: "SF / remote. No-code + AI platform. PMM for enterprise and PLG. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Vercel
+    careers_url: https://job-boards.greenhouse.io/vercel
+    api: https://boards-api.greenhouse.io/v1/boards/vercel/jobs
+    notes: "Remote. Frontend AI platform (v0.dev). Developer marketing + PMM. Fully remote team. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Temporal
+    careers_url: https://job-boards.greenhouse.io/temporal
+    api: https://boards-api.greenhouse.io/v1/boards/temporal/jobs
+    notes: "Remote. Workflow orchestration platform. Developer + enterprise PMM. Remote-friendly. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Arize AI
+    careers_url: https://job-boards.greenhouse.io/arizeai
+    api: https://boards-api.greenhouse.io/v1/boards/arizeai/jobs
+    notes: "Remote. AI observability / LLMOps. PMM for ML/AI buyer persona — Abhinav's enterprise AI background is a strong match. [T8: remote or relocation only]"
+    enabled: true
+
+  # -- Contact Center AI --
+
+  - name: Ada
+    careers_url: https://job-boards.greenhouse.io/ada
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io "ada" "Product Marketing" OR "PMM" remote'
+    notes: "Toronto + remote. AI customer service platform. Enterprise GTM. Remote-friendly. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: LivePerson
+    careers_url: https://liveperson.com/company/careers
+    scan_method: websearch
+    scan_query: 'site:liveperson.com/careers "Product Marketing" OR "PMM" remote OR "EMEA"'
+    notes: "Remote EMEA. Conversational AI for enterprise. PMM roles for EU market. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Sierra
+    careers_url: https://jobs.ashbyhq.com/sierra
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/sierra "Marketing" OR "PMM"'
+    notes: "SF. AI customer agent platform (Bret Taylor). Enterprise GTM. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Decagon
+    careers_url: https://jobs.ashbyhq.com/decagon
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/decagon "Marketing" OR "PMM"'
+    notes: "AI customer support agents. Fast-growing Series B. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Talkdesk
+    careers_url: https://www.talkdesk.com/careers
+    scan_method: websearch
+    scan_query: 'site:talkdesk.com/careers "Product Marketing" OR "PMM" remote OR "EMEA"'
+    notes: "Lisbon. Contact center AI cloud. EMEA PMM roles. EU relocation / remote possible. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Genesys
+    careers_url: https://www.genesys.com/careers
+    scan_method: websearch
+    scan_query: 'site:genesys.com/careers "Product Marketing" OR "PMM" remote OR India OR APAC'
+    notes: "Contact center cloud + AI. Global enterprise. India offices exist. [T8: remote or relocation only]"
+    enabled: true
+
+  # -- Enterprise (additional) --
+
+  - name: Twilio
+    careers_url: https://www.twilio.com/en-us/company/jobs
+    scan_method: websearch
+    scan_query: 'site:twilio.com/company/jobs "Product Marketing" OR "PMM" remote OR India OR Singapore'
+    notes: "Remote / India offices. Voice + messaging infra. Developer + enterprise PMM. India team exists. [T8: remote or India office preferred]"
+    enabled: true
+
+  - name: Dialpad
+    careers_url: https://www.dialpad.com/careers
+    scan_method: websearch
+    scan_query: 'site:dialpad.com/careers "Product Marketing" OR "PMM" remote OR "relocation"'
+    notes: "Voice AI for business comms. PMM for enterprise GTM. Remote roles. [T8: remote or relocation only]"
+    enabled: true
+
+  # -- LLMOps & AI Infra --
+
+  - name: Weights & Biases
+    careers_url: https://jobs.lever.co/wandb
+    notes: "Remote. MLOps / AI experiment tracking platform. PMM for developer + enterprise. Fully remote team. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Langfuse
+    careers_url: https://langfuse.com/careers
+    scan_method: websearch
+    scan_query: '"langfuse" careers "marketing" OR "PMM" OR "growth"'
+    notes: "Berlin. LLMOps / AI observability open-source platform. Early-stage, growing PMM. EU relocation possible. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Lindy
+    careers_url: https://jobs.ashbyhq.com/lindy
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/lindy "Marketing" OR "PMM"'
+    notes: "AI agent management platform. PMM + GTM roles. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Cognigy
+    careers_url: https://careers.cognigy.com
+    scan_method: websearch
+    scan_query: 'site:cognigy.com/careers OR "cognigy" "Product Marketing" OR "PMM" remote OR "relocation"'
+    notes: "Dusseldorf. Enterprise conversational AI. EMEA-strong. PMM roles. EU visa route possible. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Speechmatics
+    careers_url: https://job-boards.greenhouse.io/speechmatics
+    api: https://boards-api.greenhouse.io/v1/boards/speechmatics/jobs
+    notes: "Cambridge UK. Speech recognition API. PMM for developer + enterprise. UK visa route possible. [T8: remote or relocation only]"
+    enabled: true
+
+  # -- Automation Platforms --
+
+  - name: n8n
+    careers_url: https://jobs.ashbyhq.com/n8n
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/n8n "Marketing" OR "PMM" OR "developer marketing"'
+    notes: "Berlin + remote EU/US. Workflow automation (open-source). Developer marketing + PMM. Remote-friendly. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Zapier
+    careers_url: https://jobs.ashbyhq.com/zapier
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/zapier "Product Marketing" OR "PMM"'
+    notes: "Fully remote. Automation platform leader. Strong PMM team. Truly async-remote culture. [T8: remote — confirmed remote-first]"
+    enabled: true
+
+  - name: Make.com
+    careers_url: https://www.make.com/en/careers
+    scan_method: websearch
+    scan_query: 'site:make.com/en/careers "Product Marketing" OR "PMM" OR "Marketing Manager" remote OR "relocation"'
+    notes: "Prague / remote. Visual automation platform. PMM + growth roles. EU relocation / remote possible. [T8: remote or relocation only]"
+    enabled: true
+
+  # -- European Tech --
+
+  - name: Factorial
+    careers_url: https://job-boards.greenhouse.io/factorial
+    api: https://boards-api.greenhouse.io/v1/boards/factorial/jobs
+    notes: "Barcelona. HR SaaS unicorn. PMM for SMB + enterprise. EU relocation / Spain visa route possible. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Attio
+    careers_url: https://jobs.ashbyhq.com/attio
+    scan_method: websearch
+    scan_query: 'site:attio.com/careers OR site:jobs.ashbyhq.com/attio "Marketing" OR "PMM"'
+    notes: "Remote EU. AI-native CRM. Series B $52M. PMM for developer + enterprise. Remote-EU friendly. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Tinybird
+    careers_url: https://jobs.ashbyhq.com/tinybird
+    scan_method: websearch
+    scan_query: 'site:tinybird.co/careers OR site:jobs.ashbyhq.com/tinybird "Marketing" OR "PMM"'
+    notes: "Remote. Real-time data platform for developers. Developer marketing. Fully remote. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: Clarity AI
+    careers_url: https://jobs.lever.co/clarity-ai
+    scan_method: websearch
+    scan_query: 'site:clarity.ai/careers OR site:jobs.lever.co/clarity-ai "Product Marketing" OR "PMM"'
+    notes: "Madrid / remote. Sustainability analytics with AI. PMM for ESG/enterprise. [T8: remote or relocation only]"
+    enabled: true
+
+  - name: TravelPerk
+    careers_url: https://jobs.ashbyhq.com/travelperk
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/travelperk "Product Marketing" OR "PMM" OR "Marketing Manager"'
+    notes: "Barcelona. Business travel unicorn. PMM for B2B/enterprise. Spain visa route possible. [T8: remote or relocation only]"
     enabled: true

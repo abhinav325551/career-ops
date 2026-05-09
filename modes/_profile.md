@@ -64,6 +64,11 @@ If you have a live portfolio, case studies, or published thought leadership (che
 
 **IMPORTANT:** A US or EMEA role that is explicitly "fully remote, hire anywhere" must be scored neutrally on location (4.0–4.5). Only penalize if the role requires physical presence outside India/ASEAN/ME.
 
+**Tier 8 global companies (AI Labs, Voice AI, Contact Center AI, LLMOps, Automation, European Tech):** Only worth pursuing if one of two conditions is met:
+1. JD says "remote" / "work from anywhere" / "hire globally" → treat as neutral location, score normally.
+2. JD or careers page says "visa sponsorship" / "relocation package" / "we sponsor work visas" → viable, flag relocation requirement in report header.
+If neither condition is met (on-site only, no visa) → score location 1.5, recommend skip. Always verify via Playwright snapshot before scoring Tier 8 roles.
+
 **In forms:**
 - India/ASEAN/ME roles: state timezone as IST (UTC+5:30)
 - Remote US roles: confirm IST-to-US-East overlap capacity (mornings align)
